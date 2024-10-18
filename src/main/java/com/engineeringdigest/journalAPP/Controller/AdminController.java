@@ -21,7 +21,7 @@ public class AdminController {
     public ResponseEntity<?> getAllUsers(){
         List<User> all = userService.getAll();
         if(all != null && !all.isEmpty()){
-            System.out.println("L2");
+            System.out.println("Hi");
             return new ResponseEntity<>(all, HttpStatus.OK);
         }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
